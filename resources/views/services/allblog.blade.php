@@ -9,8 +9,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
-              <h2 class="mb-4">tin tức và các bài viết</h2>
-              <p>Cà phê luôn là nguồn cảm hứng cho mọi luồng năng lượng tích cực. Sở hữu một ly cà phê như được sống lại một con người bùng tỏa năng lượng.</p>
+              <h2 class="mb-4">Recent from blog</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             </div>
           </div>
         <div class="row d-flex">
@@ -33,10 +33,8 @@
                   <div><a href="#">{{ $nv->Ten_NV }}</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> {{ $countbl }}</a></div>
                 </div>
-                <h3 class="heading mt-2" ><a href="{{action("BlogController@blogdetail",['Id_TT'=>$tin->Id_TT])}}">{{ $tin->Tieu_De }}</a></h3>
-                <div class="content-short">
+                <h3 class="heading mt-2"><a href="{{action("BlogController@blogdetail",['Id_TT'=>$tin->Id_TT])}}">{{ $tin->Tieu_De }}</a></h3>
                 {!! $tin->ND_ngan !!}
-                </div>
               </div>
             </div>
           </div>

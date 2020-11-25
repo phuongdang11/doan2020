@@ -102,15 +102,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/qr-code', function () {
-    
     // $pngImage = QrCode::format('png')->merge('logoburncoffee3.png', 0.3, true)
     //                 ->size(500)->errorCorrection('H')
     //                 ->generate('Welcome to Burn Coffee');
 
     // return response($pngImage)->header('Content-type','image/png');
-    return QrCode::size(500)->generate('https://kstudio.vn/');
-});
-
-Route::get('/qrcode_blade', function () {
-    return view('qr_code');
+    return QrCode::size(500)->generate('Welcome to kerneldev.com!');
 });
