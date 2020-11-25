@@ -14,7 +14,6 @@ class Suabanggiohang extends Migration
     public function up()
     {
         Schema::table('GioHang', function (Blueprint $table) {
-            $table->foreign('Id_NV')->references('Id_NV')->on('NhanVien');
             $table->foreign('Id_KH')->references('Id_KH')->on('KhachHang');
             $table->foreign('Id_SP')->references('Id_SP')->on('SanPham');
         });
